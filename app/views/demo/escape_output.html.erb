@@ -1,0 +1,23 @@
+<% string1 = "<h1>Bad</h1>".html_safe %>
+<% string2 = "<em>good!</em>".html_safe %>
+<% string3 = '<strong>Please</strong> visit <a href="http://www.slamar.com/">us</a>' %>
+<%= string1 %>
+<br />
+<%= string2 %>
+<p></p>
+<%= string1.html_safe? %>
+<br />
+<%= string2.html_safe? %>
+<p></p>
+<%= string1 %>
+<br />
+<%= string2 %>
+<hr>
+<%= string3 %>
+<p></p>
+<%= strip_links(string3) %>
+<br>
+<%= strip_tags(string3) %>
+
+<hr>
+
