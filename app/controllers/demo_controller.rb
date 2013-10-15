@@ -2,6 +2,7 @@ class DemoController < ApplicationController
 
   layout 'admin'
 
+
   def index
   	#render('demo/hello')
   	#redirect_to(:action => 'other_hello')
